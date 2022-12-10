@@ -34,8 +34,7 @@ export const TaskFormik = ({ add, length }) => {
 				initialValues={initialValues}
 				validationSchema={taskSchema}
 				onSubmit={async values => {
-					await new Promise(r => setTimeout(r, 1000));
-					alert(JSON.stringify(values, null, 2));
+					await new Promise(r => setTimeout(r, 500));
 					const newTask = new TaskClass(
 						values.name,
 						values.description,

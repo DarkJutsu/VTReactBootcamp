@@ -109,7 +109,6 @@ const TaskList = () => {
 				Your Task
 				<div className='w-96 h-0.5 bg-black'></div>
 			</h1>
-			{/* <TaskForm add={addTask} length={tasks.length} /> */}
 			<div className='flex justify-center'>
 				<TaskFormik add={addTask} length={tasks.length} />
 			</div>
